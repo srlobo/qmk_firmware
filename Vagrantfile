@@ -95,4 +95,11 @@ Vagrant.configure(2) do |config|
 
 
   EOT
+
+  config.vm.synced_folder "../../vimconf", "/vimconf/", type: "rsync"
+  config.vm.provision "shell", run: "always", privileged: false, inline: <<-SHELL
+    ln -sf /vimconf/ /home/vagrant/
+    ln -sf vimconf/vim /home/vagrant/.vim
+    ln -sf vimconf/vimrc /home/vagrant/.vimrc
+  SHELL
 end
