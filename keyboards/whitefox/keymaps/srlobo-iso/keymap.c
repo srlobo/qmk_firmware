@@ -14,7 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include "keymap_common.h"
+#include "whitefox.h"
 
 const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer
@@ -30,31 +30,31 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctrl|Gui |Alt |         Space    |Fn0 |Alt |Gui |  |Lef|Dow|Rig|
      * `---------------------------------------------------------------'
      */
-    [0] = KEYMAP(
+    [0] = KEYMAP_ISO(
         FN8 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,0   ,MINS,EQL ,BSPC,    GRV ,\
         TAB ,Q   ,W   ,E   ,R   ,T   ,Y   ,U   ,I   ,O   ,P   ,LBRC,RBRC,          DEL,\
         LCTL,A   ,S   ,D   ,F   ,G   ,H   ,J   ,K   ,L   ,FN3 ,QUOT,NUHS,ENT ,    PGUP,\
         LSFT,FN2 ,Z   ,X   ,C   ,V   ,B   ,N   ,M   ,COMM,DOT ,SLSH,RSFT,     UP, PGDN,\
         FN1 ,LGUI,LALT,               SPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [1] = KEYMAP(
+    [1] = KEYMAP_ISO(
         FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    CAPS,\
         TAB ,DEL ,TRNS,UP  ,PSCR,BRK ,TRNS,PSCR,UP  ,TRNS,DEL ,TRNS,TRNS,          INS,\
         LCTL,TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,LEFT,DOWN,RGHT,FN3 ,INS ,SLCK,ENT ,    HOME,\
         LSFT,FN2 ,HOME,PGUP,PGDN,END ,TRNS,TRNS,HOME,PGUP,PGDN,END ,RSFT,     UP,  END,\
         FN1 ,LGUI,LALT,              BSPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [2] = KEYMAP(
+    [2] = KEYMAP_ISO(
         FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    NLCK ,\
         TAB ,DEL ,PMNS,PPLS,PAST,PSLS,TRNS,P7  ,P8  ,P9  ,PSLS,TRNS,TRNS,          DEL,\
         LCTL,EQL ,DEL ,PENT,TAB ,FN6 ,TRNS,P4  ,P5  ,P6  ,FN3 ,TRNS,NLCK,TRNS,    PGUP,\
         LSFT,FN2 ,TRNS,TRNS,TRNS,FN7 ,PDOT,P0  ,P1  ,P2  ,P3  ,PDOT,RSFT,     UP, PGDN,\
         FN1 ,LGUI,LALT,              BSPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [3] = KEYMAP(
+    [3] = KEYMAP_ISO(
         FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    GRV ,\
         TAB ,TRNS,BTN4,WH_U,BTN5,TRNS,TRNS,TRNS,MS_U,TRNS,TRNS,TRNS,TRNS,          DEL,\
         LCTL,TRNS,BTN2,BTN3,BTN1,TRNS,TRNS,MS_L,MS_D,MS_R,FN3 ,TRNS,TRNS,TRNS,    PGUP,\
         LSFT,FN2 ,TRNS,TRNS,WH_D,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,     UP, PGDN,\
         FN1 ,LGUI,LALT,               SPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [4] = KEYMAP(
+    [4] = KEYMAP_ISO(
         FN8 , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO ,VOLD,VOLU,PWR ,     NO ,\
          NO , NO , NO , NO , NO , NO , NO , NO , NO , NO ,MPLY,MPRV,MNXT,          NO ,\
          NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO,  NO ,     NO ,\
