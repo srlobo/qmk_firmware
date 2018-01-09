@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "whitefox.h"
 
-const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer
      * ,---------------------------------------------------------------.
      * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Backspc|Ins|
@@ -25,9 +25,9 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------------------------------------------------------Enter----|
      * |CapsLo|  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|  #|    |PgU|
      * |---------------------------------------------------------------|
-     * |Shif|  \|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Up |PgD|
+     * |Shift| \|  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Up |PgD|
      * |---------------------------------------------------------------|
-     * |Ctrl|Gui |Alt |         Space    |Fn0 |Alt |Gui |  |Lef|Dow|Rig|
+     * |Ctrl|Gui |Alt |         Space        |Fn0 |Alt |Gui|Lef|Dow|Rig|
      * `---------------------------------------------------------------'
      */
     [0] = KEYMAP_ISO(
