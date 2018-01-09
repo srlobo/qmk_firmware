@@ -63,6 +63,10 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+/* Give numbers some descriptive names */
+#define ACTION_LEDS_ALL 1
+#define ACTION_LEDS_GAME 2
+
 const uint16_t fn_actions[] = {
     [1] = ACTION_LAYER_MOMENTARY(1),
     [2] = ACTION_LAYER_TAP_KEY(2, KC_NUBS),
@@ -73,3 +77,24 @@ const uint16_t fn_actions[] = {
     [7] = ACTION_MODS_KEY(MOD_LSFT, KC_TAB),
     [8] = ACTION_LAYER_TAP_KEY(4, KC_ESC),
 };
+
+/* custom action function */
+void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
+  /*
+  (void)opt;
+  switch(id) {
+    case ACTION_LEDS_ALL:
+        if(record->event.pressed) {
+          // signal the LED controller thread
+          chMBPost(&led_mailbox, LED_MSG_GAME_TOGGLE, TIME_IMMEDIATE);
+        }
+      break;
+    case ACTION_LEDS_GAME:
+      if(record->event.pressed) {
+        // signal the LED controller thread
+        chMBPost(&led_mailbox, LED_MSG_ALL_TOGGLE, TIME_IMMEDIATE);
+      }
+      break;
+  }
+  */
+}
