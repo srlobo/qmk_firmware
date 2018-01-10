@@ -30,36 +30,36 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctrl|Gui |Alt |         Space        |Fn0 |Alt |Gui|Lef|Dow|Rig|
      * `---------------------------------------------------------------'
      */
-    [0] = KEYMAP_ISO(
-        FN8 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,0   ,MINS,EQL ,BSPC,    GRV ,\
-        TAB ,Q   ,W   ,E   ,R   ,T   ,Y   ,U   ,I   ,O   ,P   ,LBRC,RBRC,          DEL,\
-        LCTL,A   ,S   ,D   ,F   ,G   ,H   ,J   ,K   ,L   ,FN3 ,QUOT,NUHS,ENT ,    PGUP,\
-        LSFT,FN2 ,Z   ,X   ,C   ,V   ,B   ,N   ,M   ,COMM,DOT ,SLSH,RSFT,     UP, PGDN,\
-        FN1 ,LGUI,LALT,               SPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [1] = KEYMAP_ISO(
-        FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    CAPS,\
-        TAB ,DEL ,TRNS,UP  ,PSCR,BRK ,TRNS,PSCR,UP  ,TRNS,DEL ,TRNS,TRNS,          INS,\
-        LCTL,TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,LEFT,DOWN,RGHT,FN3 ,INS ,SLCK,ENT ,    HOME,\
-        LSFT,FN2 ,HOME,PGUP,PGDN,END ,TRNS,TRNS,HOME,PGUP,PGDN,END ,RSFT,     UP,  END,\
-        FN1 ,LGUI,LALT,              BSPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [2] = KEYMAP_ISO(
-        FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    NLCK ,\
-        TAB ,DEL ,PMNS,PPLS,PAST,PSLS,TRNS,P7  ,P8  ,P9  ,PSLS,TRNS,TRNS,          DEL,\
-        LCTL,EQL ,DEL ,PENT,TAB ,FN6 ,TRNS,P4  ,P5  ,P6  ,FN3 ,TRNS,NLCK,TRNS,    PGUP,\
-        LSFT,FN2 ,TRNS,TRNS,TRNS,FN7 ,PDOT,P0  ,P1  ,P2  ,P3  ,PDOT,RSFT,     UP, PGDN,\
-        FN1 ,LGUI,LALT,              BSPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [3] = KEYMAP_ISO(
-        FN8 ,F1  ,F2  ,F3  ,F4  ,F5  ,F6  ,F7  ,F8  ,F9  ,F10 ,F11 ,F12 ,BSPC,    GRV ,\
-        TAB ,TRNS,BTN4,WH_U,BTN5,TRNS,TRNS,TRNS,MS_U,TRNS,TRNS,TRNS,TRNS,          DEL,\
-        LCTL,TRNS,BTN2,BTN3,BTN1,TRNS,TRNS,MS_L,MS_D,MS_R,FN3 ,TRNS,TRNS,TRNS,    PGUP,\
-        LSFT,FN2 ,TRNS,TRNS,WH_D,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,     UP, PGDN,\
-        FN1 ,LGUI,LALT,               SPC,           RALT,RGUI,FN1 ,    LEFT,DOWN,RGHT  ),
-    [4] = KEYMAP_ISO(
-        FN8 , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO ,VOLD,VOLU,PWR ,     NO ,\
-         NO , NO , NO , NO , NO , NO , NO , NO , NO , NO ,MPLY,MPRV,MNXT,          NO ,\
-         NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO,  NO ,     NO ,\
-         NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO , NO ,     NO,  NO ,\
-         NO , NO , NO ,                NO,            NO , NO , NO ,     NO , NO , NO   ),
+  [0] = KEYMAP_ISO(
+      KC_FN8,KC_1,KC_2,KC_3,KC_4,KC_5,KC_6,KC_7,KC_8,KC_9,KC_0,KC_MINS,KC_EQL,KC_BSPC,KC_GRV,\
+      KC_TAB,KC_Q,KC_W,KC_E,KC_R,KC_T,KC_Y,KC_U,KC_I,KC_O,KC_P,KC_LBRC,KC_RBRC,KC_DEL,\
+      KC_LCTL,KC_A,KC_S,KC_D,KC_F,KC_G,KC_H,KC_J,KC_K,KC_L,KC_FN3,KC_QUOT,KC_NUHS,KC_ENT,KC_PGUP,\
+      KC_LSFT,KC_FN2,KC_Z,KC_X,KC_C,KC_V,KC_B,KC_N,KC_M,KC_COMM,KC_DOT,KC_SLSH,KC_RSFT,KC_UP,KC_PGDN,\
+      KC_FN1,KC_LGUI,KC_LALT,KC_SPC,KC_RALT,KC_RGUI,KC_FN1,KC_LEFT,KC_DOWN,KC_RGHT),
+  [1] = KEYMAP_ISO(
+      KC_FN8,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_F12,KC_BSPC,KC_CAPS,\
+      KC_TAB,KC_DEL,KC_TRNS,KC_UP,KC_PSCR,KC_BRK,KC_TRNS,KC_PSCR,KC_UP,KC_TRNS,KC_DEL,KC_TRNS,KC_TRNS,KC_INS,\
+      KC_LCTL,KC_TRNS,KC_LEFT,KC_DOWN,KC_RGHT,KC_TRNS,KC_TRNS,KC_LEFT,KC_DOWN,KC_RGHT,KC_FN3,KC_INS,KC_SLCK,KC_ENT,KC_HOME,\
+      KC_LSFT,KC_FN2,KC_HOME,KC_PGUP,KC_PGDN,KC_END,KC_TRNS,KC_TRNS,KC_HOME,KC_PGUP,KC_PGDN,KC_END,KC_RSFT,KC_UP,KC_END,\
+      KC_FN1,KC_LGUI,KC_LALT,KC_BSPC,KC_RALT,KC_RGUI,KC_FN1,KC_LEFT,KC_DOWN,KC_RGHT),
+  [2] = KEYMAP_ISO(
+      KC_FN8,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_F12,KC_BSPC,KC_NLCK,\
+      KC_TAB,BL_TOGG,BL_STEP,BL_ON,BL_OFF,BL_INC,BL_DEC,KC_P7,KC_P8,KC_P9,KC_PSLS,KC_TRNS,KC_TRNS,KC_DEL,\
+      KC_LCTL,KC_EQL,KC_DEL,KC_PENT,KC_TAB,KC_FN6,KC_TRNS,KC_P4,KC_P5,KC_P6,KC_FN3,KC_TRNS,KC_NLCK,KC_TRNS,KC_PGUP,\
+      KC_LSFT,KC_FN2,KC_TRNS,KC_TRNS,KC_TRNS,KC_FN7,KC_PDOT,KC_P0,KC_P1,KC_P2,KC_P3,KC_PDOT,KC_RSFT,KC_UP,KC_PGDN,\
+      KC_FN1,KC_LGUI,KC_LALT,KC_BSPC,KC_RALT,KC_RGUI,KC_FN1,KC_LEFT,KC_DOWN,KC_RGHT),
+  [3] = KEYMAP_ISO(
+      KC_FN8,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_F12,KC_BSPC,KC_GRV,\
+      KC_TAB,KC_TRNS,KC_BTN4,KC_WH_U,KC_BTN5,KC_TRNS,KC_TRNS,KC_TRNS,KC_MS_U,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_DEL,\
+      KC_LCTL,KC_TRNS,KC_BTN2,KC_BTN3,KC_BTN1,KC_TRNS,KC_TRNS,KC_MS_L,KC_MS_D,KC_MS_R,KC_FN3,KC_TRNS,KC_TRNS,KC_TRNS,KC_PGUP,\
+      KC_LSFT,KC_FN2,KC_TRNS,KC_TRNS,KC_WH_D,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_RSFT,KC_UP,KC_PGDN,\
+      KC_FN1,KC_LGUI,KC_LALT,KC_SPC,KC_RALT,KC_RGUI,KC_FN1,KC_LEFT,KC_DOWN,KC_RGHT),
+  [4] = KEYMAP_ISO(
+      KC_FN8,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_VOLD,KC_VOLU,KC_PWR,KC_NO,\
+      KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_MPLY,KC_MPRV,KC_MNXT,KC_NO,\
+      KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,\
+      KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,\
+      KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO),
 
 };
 
@@ -68,33 +68,33 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #define ACTION_LEDS_GAME 2
 
 const uint16_t fn_actions[] = {
-    [1] = ACTION_LAYER_MOMENTARY(1),
-    [2] = ACTION_LAYER_TAP_KEY(2, KC_NUBS),
-    [3] = ACTION_LAYER_TAP_KEY(3, KC_SCLN),
-    [4] = ACTION_MODS_ONESHOT(MOD_LSFT),
-    [5] = ACTION_MODS_ONESHOT(MOD_RSFT),
-    [6] = ACTION_MODS_KEY(MOD_LSFT, KC_SCLN),
-    [7] = ACTION_MODS_KEY(MOD_LSFT, KC_TAB),
-    [8] = ACTION_LAYER_TAP_KEY(4, KC_ESC),
+  [1] = ACTION_LAYER_MOMENTARY(1),
+  [2] = ACTION_LAYER_TAP_KEY(2, KC_NUBS),
+  [3] = ACTION_LAYER_TAP_KEY(3, KC_SCLN),
+  [4] = ACTION_MODS_ONESHOT(MOD_LSFT),
+  [5] = ACTION_MODS_ONESHOT(MOD_RSFT),
+  [6] = ACTION_MODS_KEY(MOD_LSFT, KC_SCLN),
+  [7] = ACTION_MODS_KEY(MOD_LSFT, KC_TAB),
+  [8] = ACTION_LAYER_TAP_KEY(4, KC_ESC),
 };
 
 /* custom action function */
 void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
   /*
-  (void)opt;
-  switch(id) {
-    case ACTION_LEDS_ALL:
-        if(record->event.pressed) {
-          // signal the LED controller thread
-          chMBPost(&led_mailbox, LED_MSG_GAME_TOGGLE, TIME_IMMEDIATE);
-        }
-      break;
-    case ACTION_LEDS_GAME:
-      if(record->event.pressed) {
-        // signal the LED controller thread
-        chMBPost(&led_mailbox, LED_MSG_ALL_TOGGLE, TIME_IMMEDIATE);
-      }
-      break;
+     (void)opt;
+     switch(id) {
+     case ACTION_LEDS_ALL:
+     if(record->event.pressed) {
+  // signal the LED controller thread
+  chMBPost(&led_mailbox, LED_MSG_GAME_TOGGLE, TIME_IMMEDIATE);
+  }
+  break;
+  case ACTION_LEDS_GAME:
+  if(record->event.pressed) {
+  // signal the LED controller thread
+  chMBPost(&led_mailbox, LED_MSG_ALL_TOGGLE, TIME_IMMEDIATE);
+  }
+  break;
   }
   */
 }
